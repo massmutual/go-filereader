@@ -1,5 +1,5 @@
 /*
-Package nginxParser should be used as a way to parse an nginx log that is created by a kubernetes clusters ingress controller.
+Package nginxFileReader should be used as a way to parse an nginx log that is created by a kubernetes clusters ingress controller.
 This package uses a regex restructer to parse the lines, so it assumes the default
 kubernetes log format found here: https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/log-format/ 
 Example Main 
@@ -10,16 +10,16 @@ Example Main
 		"fmt"
 		"os"
 
-		nginxParser "github.com/massmutual/go-filereader/nginx-filereader"
+		nginxFileReader "github.com/massmutual/go-filereader/nginx-filereader"
 	)
 
 	//example on how to use the nginx parser.
 
 	func main() {
-		var nignxlog nginxParser.NingxLog
+		var nignxlog nginxFileReader.NingxLog
 		nignxlog.Unmatched = 0
 		file, _ := os.Open("./test")
-		position, err := nginxParser.ReadNginxLog(file, 0, &nignxlog)
+		position, err := nginxFileReader.ReadNginxLog(file, 0, &nignxlog)
 
 		if err != nil {
 			fmt.Println("error:", err)
@@ -32,7 +32,7 @@ Example Main
 	}
 
 */
-package nginxParser
+package nginxFileReader
 
 import (
 	"bufio"

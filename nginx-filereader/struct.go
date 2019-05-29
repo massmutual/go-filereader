@@ -1,4 +1,4 @@
-package nginxParser
+package nginxFileReader
 
 // NginxLog is the objject that will contain an array of parsed log lines
 // as well as a count of how many lines were parsed and how many lines

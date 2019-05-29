@@ -1,7 +1,7 @@
-// Package nginxParser should be used as a way to parse an nginx log that is created by a kubernetes clusters
+// Package nginxFileReader should be used as a way to parse an nginx log that is created by a kubernetes clusters
 // ingress controller. This package uses a regex restructer to parse the lines, so it assumes the default
 // kubernetes log format found here: // https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/log-format/
-package nginxParser
+package nginxFileReader
 
 import (
 	"encoding/json"
