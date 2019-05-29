@@ -51,7 +51,10 @@ ReadNginxLog takes in the following objects:
     *NignxLog - A pointer to an nginxlog object you would like to add lines to
     This method will return the last position read from that file, as well as an error
 
-if there was a problem. check if error is nil before using object
+if there was a problem. check if error is nil before using object The way this
+should be used is by keeping track of the returned pointer, and sleeping in your
+main some how. After a bit of time, return that pointer again to read more
+lines. this way you can get read more of the file to see if any new lines appear
 
 #### type NginxLog
 
