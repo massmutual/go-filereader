@@ -10,7 +10,7 @@ Example Main
 		"fmt"
 		"os"
 
-		nginxParser "github.com/jecafarelli/golang-filereader/nginx-parser"
+		nginxParser "github.com/massmutual/go-filereader/nginx-filereader"
 	)
 
 	//example on how to use the nginx parser.

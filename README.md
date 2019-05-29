@@ -16,7 +16,7 @@ https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/log-fo
     	"fmt"
     	"os"
 
-    	nginxParser "github.com/jecafarelli/golang-filereader/nginx-parser"
+    	nginxParser "github.com/massmutual/go-filereader/nginx-filereader"
     )
 
     //example on how to use the nginx parser.
@@ -138,4 +138,4 @@ Request struct is the details of the request made:
 To regenerate
 
     go get github.com/robertkrimen/godocdown/godocdown
-    godocdown nginx-parser
+    godocdown nginx-filereader

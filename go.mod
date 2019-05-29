@@ -1,4 +1,4 @@
-module github.com/jecafarelli/golang-filereader
+module github.com/massmutual/go-filereader
 
 go 1.12
 

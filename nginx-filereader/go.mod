@@ -1,4 +1,4 @@
-module github.com/jecafarelli/golang-filereader/nginx-parser
+module github.com/massmutual/go-filereader/nginx-filereader
 
 go 1.12
 
